@@ -1,0 +1,6 @@
+region_id,region_name,county,latitude,longitude,population_factor
+REG001,Mombasa,Mombasa,-4.0435,39.6682,1.1
+REG002,Nairobi,Nairobi,-1.2921,36.8219,1.8
+REG003,Nakuru,Nakuru,-0.3031,36.08,1.2
+REG004,Eldoret,Uasin Gishu,0.5143,35.2698,0.9
+REG005,Kisumu,Kisumu,-0.0917,34.768,0.95

@@ -1,0 +1,118 @@
+2026-08-09 13:42:27,533 | INFO | __main__ | ||||||||||||||||||||||||||||||||||||||||
+2026-08-09 13:42:27,535 | INFO | __main__ | KPC REGIONAL DEMAND & STOCK-OUT PIPELINE
+2026-08-09 13:42:27,536 | INFO | __main__ | ||||||||||||||||||||||||||||||||||||||||
+2026-08-09 13:42:27,537 | INFO | __main__ | Pipeline configuration: {'name': 'KPC Project ETL', 'environment': 'development'}
+2026-08-09 13:42:27,538 | INFO | __main__ | ///////// Pending ...  Data generation
+2026-08-09 13:42:27,538 | INFO | __main__ | ///////// Pending ...  Dirty data simulation
+2026-08-09 13:42:27,539 | INFO | __main__ | ///////// Pending ...  Cleaning
+2026-08-09 13:42:27,539 | INFO | __main__ | ///////// Pending ...  Great Expectations validation
+2026-08-09 13:42:27,540 | INFO | __main__ | ///////// Pending ...  Forecasting
+2026-08-09 13:42:27,540 | INFO | __main__ | ///////// Pending ...  Threshold engine
+2026-08-09 13:42:27,541 | INFO | __main__ | ///////// Pending ...  Stock-risk engine
+2026-08-09 13:42:27,541 | INFO | __main__ | ///////// Pending ...  Financial engine
+2026-08-09 13:42:27,541 | INFO | __main__ | ///////// Pending ...  Movement optimizer
+2026-08-09 13:42:27,542 | INFO | __main__ | ///////// Pending ...  Notifications
+2026-08-09 13:42:27,542 | INFO | __main__ | Pipeline completed successfully
+2026-08-09 13:42:27,543 | INFO | src.ingestion.master_generator | Generating master data
+2026-08-09 13:42:27,712 | INFO | src.utils.io | Saved regions.csv (5 rows)
+2026-08-09 13:42:27,734 | INFO | src.utils.io | Saved products.csv (4 rows)
+2026-08-09 13:42:27,765 | INFO | src.utils.io | Saved depots.csv (5 rows)
+2026-08-09 13:42:27,784 | INFO | src.utils.io | Saved pipeline_network.csv (4 rows)
+2026-08-09 13:42:27,798 | INFO | src.ingestion.master_generator | Master data generation completed
+2026-08-09 13:42:27,808 | INFO | src.ingestion.transaction_generator | Generating transactions
+2026-08-09 13:42:27,812 | INFO | src.utils.io | Loading regions.csv
+2026-08-09 13:42:27,894 | INFO | src.utils.io | Loading products.csv
+2026-08-09 13:42:27,925 | INFO | src.utils.io | Loading depots.csv
+2026-08-09 13:42:27,978 | INFO | src.utils.io | Loading pipeline_network.csv
+2026-08-09 13:48:16,743 | INFO | src.utils.io | Saved regional_demand.csv (21,920 rows)
+2026-08-09 13:48:17,044 | INFO | src.utils.io | Saved product_movements.csv (17,536 rows)
+2026-08-09 13:48:17,687 | INFO | src.utils.io | Saved regional_inventory.csv (21,920 rows)
+2026-08-09 13:48:17,689 | INFO | src.ingestion.transaction_generator | Transaction generation completed
+2026-08-09 13:48:17,694 | INFO | src.quality.baseline_validator | Starting baseline validation
+2026-08-09 13:48:17,763 | INFO | src.quality.baseline_validator | regions.csv duplicates: 0
+2026-08-09 13:48:17,866 | INFO | src.quality.baseline_validator | regions.csv missing values:
+Series([], dtype: int64)
+2026-08-09 13:48:17,893 | INFO | src.quality.baseline_validator | products.csv duplicates: 0
+2026-08-09 13:48:17,904 | INFO | src.quality.baseline_validator | products.csv missing values:
+Series([], dtype: int64)
+2026-08-09 13:48:17,934 | INFO | src.quality.baseline_validator | depots.csv duplicates: 0
+2026-08-09 13:48:17,941 | INFO | src.quality.baseline_validator | depots.csv missing values:
+Series([], dtype: int64)
+2026-08-09 13:48:17,978 | INFO | src.quality.baseline_validator | pipeline_network.csv duplicates: 0
+2026-08-09 13:48:17,990 | INFO | src.quality.baseline_validator | pipeline_network.csv missing values:
+Series([], dtype: int64)
+2026-08-09 13:48:18,142 | INFO | src.quality.baseline_validator | regional_demand.csv duplicates: 0
+2026-08-09 13:48:18,156 | INFO | src.quality.baseline_validator | regional_demand.csv missing values:
+Series([], dtype: int64)
+2026-08-09 13:48:18,356 | INFO | src.quality.baseline_validator | product_movements.csv duplicates: 0
+2026-08-09 13:48:18,367 | INFO | src.quality.baseline_validator | product_movements.csv missing values:
+Series([], dtype: int64)
+2026-08-09 13:48:18,596 | INFO | src.quality.baseline_validator | regional_inventory.csv duplicates: 0
+2026-08-09 13:48:18,609 | INFO | src.quality.baseline_validator | regional_inventory.csv missing values:
+Series([], dtype: int64)
+2026-08-09 13:48:18,723 | INFO | src.quality.baseline_validator | Inventory balance errors: 4376
+2026-08-09 13:48:18,803 | INFO | src.quality.baseline_validator | Negative stock records: 0
+2026-08-09 13:48:18,947 | INFO | src.quality.baseline_validator | Pipeline capacity violations: 0
+2026-08-09 13:48:19,042 | INFO | src.quality.baseline_validator | Invalid product IDs: 0
+2026-08-09 13:48:19,044 | INFO | src.quality.baseline_validator | Baseline validation completed
+2026-08-09 13:48:19,079 | INFO | src.utils.io | Saved regions.csv (5 rows)
+2026-08-09 13:48:19,080 | INFO | src.quality.dirty_generator | Dirty generated: regions.csv
+2026-08-09 13:48:19,108 | INFO | src.utils.io | Saved products.csv (4 rows)
+2026-08-09 13:48:19,109 | INFO | src.quality.dirty_generator | Dirty generated: products.csv
+2026-08-09 13:48:19,138 | INFO | src.utils.io | Saved depots.csv (5 rows)
+2026-08-09 13:48:19,139 | INFO | src.quality.dirty_generator | Dirty generated: depots.csv
+2026-08-09 13:48:19,161 | INFO | src.utils.io | Saved pipeline_network.csv (4 rows)
+2026-08-09 13:48:19,162 | INFO | src.quality.dirty_generator | Dirty generated: pipeline_network.csv
+2026-08-09 13:48:23,061 | INFO | src.utils.io | Saved regional_demand.csv (22,139 rows)
+2026-08-09 13:48:23,063 | INFO | src.quality.dirty_generator | Dirty generated: regional_demand.csv
+2026-08-09 13:48:23,431 | INFO | src.utils.io | Saved product_movements.csv (17,711 rows)
+2026-08-09 13:48:23,432 | INFO | src.quality.dirty_generator | Dirty generated: product_movements.csv
+2026-08-09 13:48:24,053 | INFO | src.utils.io | Saved regional_inventory.csv (22,139 rows)
+2026-08-09 13:48:24,059 | INFO | src.quality.dirty_generator | Dirty generated: regional_inventory.csv
+2026-08-09 13:48:24,064 | INFO | src.quality.dirty_generator | Dirty dataset generation completed
+2026-08-09 13:48:24,113 | INFO | src.quality.cleaner | Cleaning regions.csv
+2026-08-09 13:48:24,128 | INFO | src.quality.cleaner | Removed 0 duplicate rows
+2026-08-09 13:48:24,181 | INFO | src.utils.io | Saved regions.csv (5 rows)
+2026-08-09 13:48:24,244 | INFO | src.quality.cleaner | Cleaning products.csv
+2026-08-09 13:48:24,252 | INFO | src.quality.cleaner | Removed 0 duplicate rows
+2026-08-09 13:48:24,290 | INFO | src.utils.io | Saved products.csv (4 rows)
+2026-08-09 13:48:24,309 | INFO | src.quality.cleaner | Cleaning depots.csv
+2026-08-09 13:48:24,316 | INFO | src.quality.cleaner | Removed 0 duplicate rows
+2026-08-09 13:48:24,333 | INFO | src.utils.io | Saved depots.csv (5 rows)
+2026-08-09 13:48:24,367 | INFO | src.quality.cleaner | Cleaning pipeline_network.csv
+2026-08-09 13:48:24,384 | INFO | src.quality.cleaner | Removed 0 duplicate rows
+2026-08-09 13:48:24,398 | INFO | src.utils.io | Saved pipeline_network.csv (4 rows)
+2026-08-09 13:48:24,517 | INFO | src.quality.cleaner | Cleaning regional_demand.csv
+2026-08-09 13:48:24,561 | INFO | src.quality.cleaner | Removed 181 duplicate rows
+2026-08-09 13:48:24,793 | INFO | src.utils.io | Saved regional_demand.csv (21,958 rows)
+2026-08-09 13:48:24,950 | INFO | src.quality.cleaner | Cleaning product_movements.csv
+2026-08-09 13:48:25,045 | INFO | src.quality.cleaner | Removed 175 duplicate rows
+2026-08-09 13:48:25,330 | INFO | src.utils.io | Saved product_movements.csv (17,536 rows)
+2026-08-09 13:48:25,537 | INFO | src.quality.cleaner | Cleaning regional_inventory.csv
+2026-08-09 13:48:25,631 | INFO | src.quality.cleaner | Removed 204 duplicate rows
+2026-08-09 13:48:26,895 | INFO | src.utils.io | Saved regional_inventory.csv (21,935 rows)
+2026-08-09 13:48:26,941 | INFO | src.quality.cleaner | Cleaning completed
+2026-08-09 13:48:27,466 | INFO | src.inventory.reconciliation | Inventory reconciliation completed
+2026-08-09 13:48:28,628 | INFO | src.inventory.reconciliation | Saved reconciled inventory
+2026-08-09 13:48:28,634 | INFO | src.quality.gx_validator | Running data quality validation
+2026-08-09 13:48:30,580 | INFO | src.forecasting.forecast_service | Starting demand forecasting
+2026-08-09 13:48:30,893 | INFO | src.forecasting.forecast_service | Demand cleaning removed 662 rows
+2026-08-09 13:48:30,933 | INFO | src.forecasting.forecast_service | Forecast combinations: 20
+2026-08-09 13:49:07,249 | INFO | src.forecasting.forecast_service | Forecast saved: C:\Users\brian\OneDrive\Documents\Week_4\data\gold\forecast_results.csv
+2026-08-09 13:49:07,255 | INFO | src.inventory.threshold_service | Running threshold engine
+2026-08-09 13:49:08,592 | INFO | src.inventory.threshold_service | Saved threshold analysis: C:\Users\brian\OneDrive\Documents\Week_4\data\gold\inventory_thresholds.csv
+2026-08-09 13:49:08,596 | INFO | src.risk.risk_engine | Running enterprise stock risk engine
+2026-08-09 13:49:09,014 | INFO | src.risk.risk_engine | Risk level distribution: {'LOW': 13165, 'CRITICAL': 8754, 'MEDIUM': 2}
+2026-08-09 13:49:10,725 | INFO | src.risk.risk_engine | Risk analysis saved: C:\Users\brian\OneDrive\Documents\Week_4\data\gold\stock_risk_analysis.csv
+2026-08-09 13:49:10,727 | INFO | src.movement.movement_optimizer | Running movement optimizer
+2026-08-09 13:52:42,894 | INFO | src.movement.movement_optimizer | Movement recommendations saved: C:\Users\brian\OneDrive\Documents\Week_4\data\gold\movement_recommendations.csv
+2026-08-09 13:52:42,895 | INFO | src.finance.financial_engine | Running financial impact engine
+2026-08-09 13:52:43,901 | INFO | src.finance.financial_engine | Financial analysis saved
+2026-08-09 13:52:43,994 | INFO | src.database.postgres_loader | Loading Gold Layer into PostgreSQL
+2026-08-09 13:52:44,636 | INFO | src.database.postgres_loader | forecast_results loaded (600 rows)
+2026-08-09 13:53:11,267 | INFO | src.database.postgres_loader | inventory_thresholds loaded (21921 rows)
+2026-08-09 13:54:01,088 | INFO | src.database.postgres_loader | stock_risk_analysis loaded (21921 rows)
+2026-08-09 13:54:04,449 | INFO | src.database.postgres_loader | movement_recommendations loaded (8756 rows)
+2026-08-09 13:54:04,511 | INFO | src.database.postgres_loader | financial_summary loaded (1 rows)
+2026-08-09 13:54:11,891 | INFO | src.database.postgres_loader | financial_impact loaded (8756 rows)
+2026-08-09 13:54:11,892 | INFO | src.database.postgres_loader | Gold layer successfully loaded.

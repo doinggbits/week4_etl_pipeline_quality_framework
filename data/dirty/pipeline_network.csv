@@ -1,0 +1,5 @@
+pipeline_id,line_name,source_depot,destination_depot,diameter_inches,capacity_m3_hr,capacity_barrels_day,lead_time_days,route_distance_km,transport_cost_per_barrel
+PL001,Line 5,DEP001,DEP002,20,1300,196256,1,440,1.5
+PL002,Line 4,DEP002,DEP003,14,515,77729,2,160,1.2
+PL003,Line 4,DEP003,DEP004,14,515,77729,2,150,1.2
+PL004,Line 6,DEP003,DEP005,10,290,43767,2,140,1.1

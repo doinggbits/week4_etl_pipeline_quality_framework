@@ -1,0 +1,6 @@
+depot_id,depot_name,region_id,storage_capacity_barrels,minimum_operating_stock
+DEP001,Mombasa Depot,REG001,500000,80000
+DEP002,Nairobi Depot,REG002,350000,60000
+DEP003,Nakuru Depot,REG003,200000,40000
+DEP004,Eldoret Depot,REG004,150000,30000
+DEP005,Kisumu Depot,REG005,120000,25000

@@ -1,0 +1,5 @@
+product_id,product_name,price_per_litre,cost_per_litre,density,holding_cost_per_barrel
+PROD001,PETROL,195,175,0.74,8
+PROD002,diesel,210,188,0.84,9
+PROD003,Jet A1,180,165,0.8,7
+PROD004,Kerosene,160,145,0.81,6
